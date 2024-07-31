@@ -37,6 +37,17 @@ h6 {
   text-shadow: 10px 10px 20px black;
 }
 
+.skill-label {
+  font-size: 18px;
+}
+
+.profile-img {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the entire element */
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -447,7 +458,7 @@ section {
 .skills .progress .skill {
   padding: 0;
   margin: 0 0 6px 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
