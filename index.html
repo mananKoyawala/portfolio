@@ -31,6 +31,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -452,21 +455,113 @@
               <li data-filter=".filter-monolith">Monolith</li>
               <li data-filter=".filter-web-scrapper">Web - Scraper</li>
               <li data-filter=".filter-micro-service">Microservices</li>
+              <li data-filter=".filter-internship">Internship</li>
             </ul>
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Monolith Projects -->
 
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-4 col-md-6 portfolio-item filter-monolith">
-            <p align="center">Hotel Management Backend</p>
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hotel_management.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="https://github.com/mananKoyawala/Go-Hotel-Management-System" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+            <div class="card" >
+              <img src="assets/img/portfolio/hotel_management.jpg" class="card-img-top" alt="...">
+              <center>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 600;">Hotel Management</h5>
+                <p class="card-text">Hotel management system using Go and MongoDB along with JWT Authentication that utilize Firebase as Storage system and Resend for email sending.</p>
+                <br><a href="https://github.com/mananKoyawala/Go-Hotel-Management-System" target="_blank" class="btn btn-primary btn-custom" style="background-color: #173b6c;">Check it out!</a>
               </div>
+            </center>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-monolith">
+            <div class="card" >
+              <img src="assets/img/portfolio/whatsapp_clone.jpg" class="card-img-top" alt="...">
+              <center>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 600;">Whatsapp Clone</h5>
+                <p class="card-text">A conceptual chat app using WebSockets for one-on-one and group chat, PostgreSQL for data storage, Docker used to run PostgreSQL as a service, and AWS S3 for file storage.</p>
+                <a href="https://github.com/mananKoyawala/whatsapp-clone" target="_blank" class="btn btn-primary btn-custom" style="background-color: #173b6c;">Check it out!</a>
+              </div>
+            </center>
+            </div>
+          </div>
+
+        <!-- Internship Projects -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+          <div class="card" >
+            <img src="assets/img/portfolio/prodigy_intenship/prodigy_task_1.jpg" class="card-img-top" alt="...">
+            <center>
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 600;">Temperature Converter</h5>
+              <p class="card-text">The goal of this task is to create a program that converts temperatures between Celsius, Fahrenheit, and Kelvin scales.</p>
+              <br>
+              <a href="https://github.com/mananKoyawala/PRODIGY_SD_01" target="_blank" class="btn btn-primary btn-custom" style="background-color: #173b6c;">Check it out!</a>
+            </div>
+          </center>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+          <div class="card" >
+            <img src="assets/img/portfolio/prodigy_intenship/prodigy_task_2.jpg" class="card-img-top" alt="...">
+            <center>
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 600;">Guess the Number Game</h5>
+              <p class="card-text">A program that challenges users to guess a randomly generated number between 1 and 100, providing feedback if the guess is too high or too low, and tracks the number of attempts.</p>
+              <a href="https://github.com/mananKoyawala/PRODIGY_SD_02" target="_blank" class="btn btn-primary btn-custom" style="background-color: #173b6c;">Check it out!</a>
+            </div>
+          </center>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+          <div class="card" >
+            <img src="assets/img/portfolio/prodigy_intenship/prodigy_task_3.jpg" class="card-img-top" alt="...">
+            <center>
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 600;">Contact Management System</h5>
+              <p class="card-text">A program for storing and managing contact information, allowing users to add, view, edit, and delete contacts. Contacts are stored in memory for easy access.</p>
+              <a href="https://github.com/mananKoyawala/PRODIGY_SD_03" target="_blank" class="btn btn-primary btn-custom" style="background-color: #173b6c;">Check it out!</a>
+            </div>
+          </center>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-internship">
+          <div class="card" >
+            <img src="assets/img/portfolio/prodigy_intenship/prodigy_task_4.jpg" class="card-img-top" alt="...">
+            <center>
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 600;">Sudoku Solver</h5>
+              <p class="card-text">A program that automatically solves Sudoku puzzles using the backtracking algorithm, taking an input grid and displaying the completed solution.</p>
+              <br>
+              <a href="https://github.com/mananKoyawala/PRODIGY_SD_04" target="_blank" class="btn btn-primary btn-custom" style="background-color: #173b6c;">Check it out!</a>
+            </div>
+          </center>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-internship filter-web-scrapper">
+          <div class="card" >
+            <img src="assets/img/portfolio/prodigy_intenship/prodigy_task_5.jpg" class="card-img-top" alt="...">
+            <center>
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 600;">E-commerce Product Scraper</h5>
+              <p class="card-text">A program that extracts product information (names, prices, ratings, image) from Amazon India using the colly package, storing the data in a CSV file.</p>
+              <br>
+              <a href="https://github.com/mananKoyawala/PRODIGY_SD_05" target="_blank" class="btn btn-primary btn-custom" style="background-color: #173b6c;">Check it out!</a>
+            </div>
+          </center>
+          </div>
+        </div>
+
+
+        
+          
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -696,7 +791,7 @@
         <div class="section-title">
           <h2>Contact</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-        </div>
+        <!-- </div> -->
 
         <!-- <div class="row" data-aos="fade-in">
 
@@ -824,6 +919,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Bootstrap script cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 
