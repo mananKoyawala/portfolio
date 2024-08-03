@@ -9,6 +9,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -53,7 +55,89 @@ h6 {
   height: 50px;
 }
 
-/*--------- Skills---------*/
+.skill-size {
+  font-size: 50px;
+}
+
+/*--------- Skills ---------*/
+
+.skill-text {
+  font-size: 1.2em; /* Adjust font size */
+  font-family: 'Lato', sans-serif; /* Apply professional font */
+}
+
+.card-cont {
+  display: grid;
+  gap: 40px; /* Adjust the gap between cards */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ensure min width fits your card */
+  padding: 16px;
+}
+
+.card {
+  width: 100%; /* Ensure the card takes full width of the grid column */
+  height: 254px;
+  border-radius: 10px !important;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce !important;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  text-align: center; /* Center text inside the div */
+  font-family: 'Roboto', sans-serif; /* Apply professional font */
+  font-size: 1.0em; /* Adjust font size */
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.skillcard:hover {
+  border: 2px solid #008bf8 !important;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.05); /* Initial scale */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+.skill-size {
+  font-size: 48px; /* Adjust icon size */
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Ensure the card takes full width of the grid column */
+  }
+  .card-cont {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for mobile screens */
+  }
+}
+
+
+
+/*--------------------------*/
+
+/*--------- Footer ---------*/
 
 .footer-container {
   width:100%;
