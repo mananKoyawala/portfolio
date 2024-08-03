@@ -131,6 +131,9 @@ h6 {
   .card-cont {
     grid-template-columns: repeat(3, 1fr); /* Three columns for mobile screens */
   }
+  .con-pat {
+    font-size: 12px;
+  }
 }
 
 
